@@ -16,7 +16,7 @@
     </p>    
 </p>
 
-# 系统介绍
+# 系统介绍 #
 PandoraBox 由Server与Client两部分组成，Server使用Java SpringBoot编写，数据存储为Mysql，欢迎页面使用iview编写；Client使用C#编写，数据存储为sqlite，Client使用inno setup打包为安装包。且为了方便快速的信息发送，Server的数据结构内需要维护一套用户验证体系与用户组织结构，目前PandoraBox仅可发送文本信息。
 
 # 设计思路 #
@@ -82,7 +82,7 @@ Pandora的数据库结构非常简单，只有三张表,用户可以直接将数据导入部门表与用户表即可
 ![step3.png](3rd/step3.png "")
 
 
-#其他事项
+# 其他事项 #
 
 - 私密信息发送后，用户仅可收取一次，收取后会将密文存入本地，每次点击时解密
 - 若需要重定义web主页的内容，可以编辑.\server\fe工程后 npm run build （注意删掉.\server\src\main\resources\static以前的内容）
